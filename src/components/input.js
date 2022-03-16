@@ -82,7 +82,7 @@ AFRAME.registerComponent('gui-input', {
             var clickActionFunctionName = guiInteractable.clickAction;
             console.log("clickActionFunctionName: "+clickActionFunctionName);
             // find object
-            var clickActionFunction = window[clickActionFunctionName];
+            var clickActionFunction = clickActionFunctionName;
             //console.log("clickActionFunction: "+clickActionFunction);
             // is object a function?
             if (typeof clickActionFunction === "function") clickActionFunction(evt);
